@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react';
+
+import UsersList from '../components/UsersList.component';
 
 const Users = () => {
-  return (
-    <div>
-      <h1>Users</h1>
-    </div>
-  );
+  return <UsersList />;
 };
 
 export default Users;
