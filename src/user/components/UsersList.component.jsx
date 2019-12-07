@@ -3,12 +3,15 @@ import React from 'react';
 import './UsersList.styles.scss';
 
 import UserItem from './UserItem.component';
+import Card from '../../shared/components/UIElements/Card/Card.component';
 
 const UsersList = ({ items }) => {
   if (!items.length)
     return (
       <div class='center'>
-        <h2>No Users found</h2>
+        <Card>
+          <h2>No Users found</h2>
+        </Card>
       </div>
     );
   return (
