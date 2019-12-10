@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './MainHeader.styles.scss';
 
 import MainHeader from './MainHeader.component';
+import NavLinks from './NavLinks.component';
 
 const MainNavigation = () => {
   return (
@@ -16,7 +17,9 @@ const MainNavigation = () => {
       <h1 className='main-navigation__title'>
         <Link to='/'>LocaShare</Link>
       </h1>
-      <nav>...</nav>
+      <nav>
+        <NavLinks />
+      </nav>
     </MainHeader>
   );
 };
