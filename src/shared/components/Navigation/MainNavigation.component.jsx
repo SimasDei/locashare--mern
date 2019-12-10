@@ -11,21 +11,19 @@ import Backdrop from '../UIElements/Backdrop/Backdrop.component';
 const MainNavigation = () => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
-  const openDrawer = () => setDrawerIsOpen(true);
-  const closeDrawer = () => setDrawerIsOpen(false);
+  const handleOpenDrawer = () => setDrawerIsOpen(true);
+  const handleCloseDrawer = () => setDrawerIsOpen(false);
 
   return (
     <React.Fragment>
-      {drawerIsOpen && <Backdrop onClick={closeDrawer} />}
-      {drawerIsOpen && (
-        <SideDrawer>
-          <nav className='main-navigation__drawer-nav'>
-            <NavLinks />
-          </nav>
-        </SideDrawer>
-      )}
+      {drawerIsOpen && <Backdrop onClick={handleCloseDrawer} />}
+      <SideDrawer show={drawerIsOpen} onClick={handleCloseDrawer}>
+        <nav className='main-navigation__drawer-nav'>
+          <NavLinks />
+        </nav>
+      </SideDrawer>
       <MainHeader>
-        <button className='main-navigation__menu-btn' onClick={openDrawer}>
+        <button className='main-navigation__menu-btn' onClick={handleOpenDrawer}>
           <span />
           <span />
           <span />
