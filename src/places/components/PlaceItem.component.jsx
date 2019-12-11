@@ -4,12 +4,12 @@ import './PlaceItem.styles.scss';
 
 import Card from '../../shared/components/UIElements/Card/Card.component';
 
-const PlaceItem = ({ item: { image, title, address, description } }) => {
+const PlaceItem = ({ place: { imageUrl, title, address, description } }) => {
   return (
     <li className='place-item'>
       <Card>
         <div className='place-item__image'>
-          <img src={image} alt={title} />
+          <img src={imageUrl} alt={title} />
         </div>
         <div className='place-item__info'>
           <h2>{title}</h2>
