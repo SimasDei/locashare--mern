@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './PlaceList.styles.scss';
+import './PlaceList.styles.css';
 
 import Card from '../../shared/components/UIElements/Card/Card.component';
 import PlaceItem from '../components/PlaceItem.component';

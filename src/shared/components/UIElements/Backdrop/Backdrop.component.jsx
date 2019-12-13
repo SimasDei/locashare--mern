@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './Backdrop.styles.scss';
+import './Backdrop.styles.css';
 
 const BackDrop = ({ onClick }) => {
   return ReactDOM.createPortal(

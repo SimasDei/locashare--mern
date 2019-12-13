@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import './SideDrawer.styles.scss';
+import './SideDrawer.styles.css';
 
 const SideDrawer = ({ children, show, onClick }) => {
   const content = (

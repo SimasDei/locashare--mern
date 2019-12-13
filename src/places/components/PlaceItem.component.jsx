@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './PlaceItem.styles.scss';
+import './PlaceItem.styles.css';
 
 import Card from '../../shared/components/UIElements/Card/Card.component';
 import Button from '../../shared/components/FormElements/Button/Button.component';

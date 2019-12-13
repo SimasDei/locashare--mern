@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './UserItem.styles.scss';
+import './UserItem.styles.css';
 
 import Avatar from '../../shared/components/UIElements/Avatar/Avatar.component';
 import Card from '../../shared/components/UIElements/Card/Card.component';
