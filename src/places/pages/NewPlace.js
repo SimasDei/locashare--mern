@@ -49,7 +49,7 @@ const NewPlace = () => {
         label='address'
         element='input'
         validators={[VALIDATOR_REQUIRE()]}
-        errorText='Please enter a valid address, at least 5 characters'
+        errorText='Please enter a valid address'
         onInput={handleInput}
       />
       <Button type='submit' disabled={!formState.isValid}>
